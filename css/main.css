@@ -4,17 +4,15 @@ body {
     font-family: sans-serif;
 }
 
-a {
-    color: #c7d3db;
-    text-decoration: none;
-    margin-left: 4px;
-}
-
+/*SECTION*/
 section {
     background-color: #ffffff;
     border-radius: 4px;
     padding: 1rem;
 }
+
+
+/*BAR_NAV*/
 
 nav {
     border-radius: 4px;
@@ -22,6 +20,8 @@ nav {
     color: #ffffff;
     margin-top: -1rem;
 }
+
+/*AREA DE TÍTULOS*/
 
 h1 { 
     text-align: center;
@@ -35,10 +35,18 @@ h4 {
     color: #c7d3db;
 }
 
+/*ESTILOS*/
+
 .active {
     color: #f1c9a1;
 }
 
 li {
     margin-bottom: 5px;
+}
+
+a {
+    color: #c7d3db;
+    text-decoration: none;
+    margin-left: 4px;
 }
