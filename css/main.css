@@ -1,0 +1,36 @@
+body {
+    background-color:#f6f7fb;
+    color: #313131;
+    font-family: sans-serif;
+}
+
+a {
+    color: #c7d3db;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+nav {
+    border-radius: 4px;
+    background-color: #1b435b;
+    color: #ffffff;
+    margin-top: -1rem;
+}
+
+h1 { 
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h4 {
+    color: #c7d3db;
+}
