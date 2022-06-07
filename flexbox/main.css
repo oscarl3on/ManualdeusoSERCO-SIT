@@ -1,0 +1,55 @@
+/* Generales */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+/* Principal */
+.principal {
+    display: flex;
+    max-width: 768px;
+    min-height: 320px;
+}
+
+/* Columnas */
+.columna {
+    padding: 2rem;
+}
+
+.columna:first-of-type {
+    border-radius: 1rem 0 0 1rem;
+}
+
+.columna:last-of-type {
+    border-radius: 0 1rem 1rem 0;
+}
+
+.uno {
+    background-color: antiquewhite;
+}
+
+.dos {
+    background-color: aqua;
+}
+
+/* Boton */
+.enlace {
+    text-decoration: none;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+}
