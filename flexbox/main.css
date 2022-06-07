@@ -14,18 +14,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgray;
+    background-color: f6f7fb;
 }
 
 /* Principal */
 .principal {
     display: flex;
-    max-width: 768px;
-    min-height: 320px;
+    max-width: 700px;
+    min-height: 200px;
 }
 
 /* Columnas */
 .columna {
+    padding: 2rem;
+    color: white;
+}
+
+.columna_principal {
+    border-radius: 1rem 1rem 1rem 1rem;
+    padding: 2rem;
+    color: white;
+}
+
+.columna_indice {
+    color: #1a4660;
+    border-radius: 1rem 1rem 1rem 1rem;
     padding: 2rem;
 }
 
@@ -37,27 +50,66 @@ body {
     border-radius: 0 1rem 1rem 0;
 }
 
+/*SEPARADOR DE HOJAS*/
+.separador {
+    padding: 0.7px;
+    color: white;
+}
+
 .uno {
-    background-color: antiquewhite;
+    background-color:#1a4660;
+    ;
 }
 
 .dos {
-    background-color: aqua;
+    background-color:#0888a5;
+    ;
+}
+
+.indice {
+    background-color: #d2d4d0;
 }
 
 /* Boton */
 .enlace {
     text-decoration: none;
     background-color: white;
-    border-radius: 1rem;
+    border-radius: 0.8rem;
     padding: 0.5rem 1rem;
     font-size: 12px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 4rem;
+    width: 100px;
+    
+}
+
+.enlace_volver {
+    text-decoration: none;
+    color: #724c5c;
 }
 
 .uno .enlace {
-    color: aqua;
+    color: #1a4660;
 }
 
 .dos .enlace {
-    color:blanchedalmond;
+    color:#0888a5;
+}
+
+/* PARRAFO */
+p {
+    text-align:justify;
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
 }
