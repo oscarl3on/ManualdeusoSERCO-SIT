@@ -17,6 +17,14 @@ body {
     background-color: f6f7fb;
 }
 
+
+/* CARDS */
+.Card_principal {
+    border-radius: 1rem 1rem 1rem 1rem;
+    padding: 2rem;
+    color: #1a4660;
+}
+
 /* Principal */
 .principal {
     display: flex;
@@ -32,6 +40,12 @@ body {
 
 .columna_principal {
     border-radius: 1rem 1rem 1rem 1rem;
+    padding: 2rem;
+    color: white;
+}
+
+.columna_faqs {
+    border-radius: 1rem 0 0 1rem;
     padding: 2rem;
     color: white;
 }
@@ -57,12 +71,17 @@ body {
 }
 
 .uno {
-    background-color:#1a4660;
+    background-color: #d2d4d0;
     ;
 }
 
 .dos {
     background-color:#0888a5;
+    ;
+}
+
+.faqs {
+    background-color: #1a4660;
     ;
 }
 
