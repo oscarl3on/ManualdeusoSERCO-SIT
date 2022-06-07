@@ -53,3 +53,11 @@ body {
     padding: 0.5rem 1rem;
     font-size: 12px;
 }
+
+.uno .enlace {
+    color: aqua;
+}
+
+.dos .enlace {
+    color:blanchedalmond;
+}
