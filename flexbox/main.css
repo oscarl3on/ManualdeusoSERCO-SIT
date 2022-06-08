@@ -161,3 +161,13 @@ h2 {
 .center {
     text-align: center;
 }
+
+.enlace_leer {
+    text-decoration: none;
+    color: #1a4660;
+}
+
+.enlace_ver {
+    text-decoration: none;
+    color: #ffffff;
+}
