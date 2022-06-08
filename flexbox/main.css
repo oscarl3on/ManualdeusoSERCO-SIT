@@ -1,4 +1,4 @@
-/* Generales */
+/* GENERALES */
 * {
     box-sizing: border-box;
 }
@@ -26,7 +26,7 @@ body {
     color: #1a4660;
 }
 
-/* Principal */
+/* MAIN */
 .principal {
     display: flex;
     max-width: 700px;
@@ -48,7 +48,7 @@ body {
 .columna_faqs {
     border-radius: 1rem 0 0 1rem;
     padding: 2rem;
-    color: white;
+    color: #1a4660;
 }
 
 .columna_indice {
@@ -77,12 +77,12 @@ body {
 }
 
 .dos {
-    background-color:#0888a5;
+    background-color:#1a4660;
     ;
 }
 
 .faqs {
-    background-color: #1a4660;
+    background-color: ffffff;
     ;
 }
 
@@ -101,9 +101,23 @@ body {
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-top: 4rem;
+    margin-top: 2rem;
     width: 100px;
     
+}
+
+.enlace_contraste {
+    text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+    width: 100px;
 }
 
 .indice {
@@ -114,14 +128,8 @@ body {
     color: #1a4660;
 }
 
-.enlace_ver_leer {
-    text-decoration: none;
-    color: white;
-}
-
 .enlace_volver {
     text-decoration: none;
-    color: #724c5c;
 }
 
 .uno .enlace {
@@ -129,7 +137,7 @@ body {
 }
 
 .dos .enlace {
-    color:#0888a5;
+    color: #1a4660;
 }
 
 /* PARRAFO */
@@ -141,8 +149,15 @@ p {
 h1 {
     text-align: center;
     text-transform: uppercase;
+    font-size: 16px;
 }
 
 h2 {
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.center {
     text-align: center;
 }
