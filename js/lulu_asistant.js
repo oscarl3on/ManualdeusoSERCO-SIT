@@ -77,11 +77,13 @@ $(function() {
      // setting am or pm
      24>h?time=h+":"+t+"":time=(h-24)+":"+t+"";
      //matching with user input
-     var saludo=["HOLA","BUENAS TARDES","BUENOS DÍAS","BUENOS DIAS","QUE TAL",];
+     var saludo=["HOLA","BUENAS TARDES","BUENOS DÍAS","BUENOS DIAS","QUE TAL","HOLAS"];
+     var pago=["CADA CUANTO DEBO RENOVAR EL PERMISO","CADA CUANTO TENGO QUE RENOVAR EL PERMISO","DEBO RENOVAR EL PERMISO","RENOVAR PERMISO","CUANDO DEBO RENOVAR EL PERMISO"];
 
       //matching with user input
      function isInArray(x, y) { return x.indexOf(y) > -1; }
     isInArray(saludo, lastmsg)==true?(smsg="Hola, como puedo ayudarle"):
+    isInArray(pago, lastmsg)==true?(smsg="El permiso tiene vigencia de un año, por lo tanto debe renovarse anualmente con un costo de Q285 por cada uno"):
 
     //checking if user input including SEARCH keyword
     //search result using iframe 
