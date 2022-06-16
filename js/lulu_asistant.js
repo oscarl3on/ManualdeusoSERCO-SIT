@@ -52,7 +52,7 @@ $(function() {
     $(".status").css("margin-left","0"),
     //Changing status last seen to online & typing 
     $("#form")[0].reset(),
-    setTimeout(function(){$(".status").html("online ")},900),setTimeout(function(){$(".status").html("typing... ")},1000),lastmsg=msg.toUpperCase().trim(),$(".conversation-container").scrollTop(scroll),send());
+    setTimeout(function(){$(".status").html("online ")},900),setTimeout(function(){$(".status").html("Escribiendo... ")},1000),lastmsg=msg.toUpperCase().trim(),$(".conversation-container").scrollTop(scroll),send());
     });
     $("#name").html("Lulu Asistente");
     //if msg is sent  bot reply 
