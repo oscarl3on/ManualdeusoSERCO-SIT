@@ -99,7 +99,7 @@ html {
   .conversation {
     height: calc(100% - 12px);
     position: relative;
-    background: #efe7dd url("#") repeat; /*Agregar fondo al chat*/
+    background: #efe7dd url("https://blogger.googleusercontent.com/img/a/AVvXsEgFDkP3G2DjmwZF1ifOdri1gOe4agSNuEksJksbiqucMMPUENTO3AVGDVbCbt7d22wRPi80_3gqRlQJFNHyV_FMQQTE6-aZhqlTD-94oUvpTHwwcugmrCOrKkDMo0Neird1ExJ-Lt1_vOYP_IqLkrGZCcj8lFRK3LTW9bPEZmVDxSkKtdv3hz4UScec=s999") repeat; /*Agregar fondo al chat*/
     z-index: 0;
   }
   

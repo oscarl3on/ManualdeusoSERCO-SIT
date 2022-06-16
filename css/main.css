@@ -365,7 +365,7 @@ display: flex;
     bottom: -4px;
   }
   .metadata .time {
-    color: rgba(0, 0, 0, .45);
+    color: #f3cba3;
     font-size: 11px;
     display: inline-block;
   }
@@ -545,12 +545,12 @@ display: flex;
     }
   
     .screen-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
   
     .conversation {
       height: calc(100vh - 55px);
@@ -558,6 +558,7 @@ display: flex;
     .conversation .conversation-container {
       height: calc(100vh - 120px);
     }
+
   .back{
       font-size:30px;
       float:left;

@@ -78,7 +78,7 @@ $(function() {
      24>h?time=h+":"+t+"":time=(h-24)+":"+t+"";
      //matching with user input
      var saludo=["HOLA","BUENAS TARDES","BUENOS DÍAS","BUENOS DIAS","QUE TAL","HOLAS"];
-     var pago=["CADA CUANTO DEBO RENOVAR EL PERMISO","CADA CUANTO TENGO QUE RENOVAR EL PERMISO","DEBO RENOVAR EL PERMISO","RENOVAR PERMISO","CUANDO DEBO RENOVAR EL PERMISO"];
+     var pago=["CADA CUANTO DEBO RENOVAR EL PERMISO","CADA CUANTO TENGO QUE RENOVAR EL PERMISO","DEBO RENOVAR EL PERMISO","RENOVAR PERMISO","CUANDO DEBO RENOVAR EL PERMISO","RENOVAR","COMO RENOVAR"];
 
       //matching with user input
      function isInArray(x, y) { return x.indexOf(y) > -1; }
