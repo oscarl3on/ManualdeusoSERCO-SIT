@@ -554,7 +554,7 @@ display: flex;
   
     .conversation {
       height: 470px;
-      max-width: 500px;
+      width: 400px;
     }
     .conversation .conversation-container {
       height: 400px;
