@@ -77,33 +77,17 @@ $(function() {
      // setting am or pm
      24>h?time=h+":"+t+"":time=(h-24)+":"+t+"";
      //matching with user input
-     var saludo=["HOLA","BUENAS TARDES","BUENOS DÍAS","BUENOS DIAS","QUE TAL","HOLA CECI","HOLA EVELYN","PRUEBA"];
-     var ayuda=["AYUDA"];
-     var correo=["DDM1"];
-     var comovamos=["¿CÓMO VAMOS?","COMO VAMOS"];
-     var status=["STATUS","ESTADO"];
-     var dunkindonuts=["RDDR2022"];
-     var comoestan=["HOLA COMO ESTA?","HOLA COMO ESTA","HOLA COMO ETA"];
-     var gracias=["GRACIAS","SI GRACIAS"];
-     var evmail=["EVMAIL"];
-     var creador=["CREADOR","DESARROLLADOR"];
+     var saludo=["HOLA","BUENAS TARDES","BUENOS DÍAS","BUENOS DIAS","QUE TAL",];
+
       //matching with user input
      function isInArray(x, y) { return x.indexOf(y) > -1; }
-    isInArray(creador, lastmsg)==true?(smsg="Mi código interno incio su desarrollo un 25/01/2022. <br><br>Mi creador es <strong>Oscar León</strong>, su número para contrataciones es +50233940537"):
-    isInArray(gracias, lastmsg)==true?(smsg="🙂"):
-    isInArray(evmail, lastmsg)==true?(smsg="Hola, Evelyn Zea <br><br>Será un placer ayudarle con la gestión de su backup de mails.<br><br><strong>Contactos disponibles para su revisión</strong><br><br>1) Dunking Donuts (<strong>ddm1</strong>)(8 mails)"):
-    isInArray(comoestan, lastmsg)==true?(smsg="Hola, !es un placer saludarle!<br><br>Todo marcha a la perfección, espero que su persona este muy bien."):
-    isInArray(correo, lastmsg)==true?(smsg="<strong>¿Cuál ha sido el avance del proceso?</strong><br><br><strong>Para:</strong> evzea@ejemplo.com<br><strong>De:</strong> ejemplo@dd.com<br><strong>Fecha:</strong> 24/enero/2022 (12:13 p.m)<br><br>Estimada, Evelyn Zea<br><br>Me podría proporcionar un reporte del avance de las licencias. <br><br>Gracias."):
-    isInArray(saludo, lastmsg)==true?(smsg="Hola, ¿cómo puedo ayudarle?<br><br>Recuerde que estoy a su disposición esté donde esté, desde la web o desde mi App Android.<br><br>Para empezar a utilizar este servicio solo tiene que escribir <strong>AYUDA</strong>.<br><br>Si ya sabe cual será su consulta, envíeme su mensaje, para poderle ayudar.<br><br><br><strong>IMPORTANTE</strong><br>Por su seguridad y la de COECO, al finalizar la conversación borrare todos los mensajes."):
-    isInArray(dunkindonuts, lastmsg)==true?(smsg="Hola <strong>Sr. Mariano.</strong> <br><br> <strong>PROYECTO:</strong> Dunkin Donuts, Roosevelt <br><br><strong>SERVICIOS CONTRATADOS:</strong><br>Licencia MUNI<br>Licencia EMPAGUA<br>Licencia AERONAUTICA<br>Licencia MEDIO AMBIENTE<br>Licencia CONRED<br>Licencia MINISTERIO DE SALUD<br>Licencia IDAEH <br><br> El proceso de su servicio esta <strong><font color='#BD4040';>detenido</font></strong>, a la espera de la firma del propietario del predio, para poder avanzar. <br><br> A continuación se le presentan las opciones que puede consultar de su servicio.<br><br><a style='color:#393939;' href='https://bit.ly/33J2JJf' target='VER PROCESO'><strong>ESTADO DEL PROCESO:</strong><br> De clic en esta opción para tener una visión amplia de su servicio.</a> <br><br><strong>REPORTE:</strong><br> Se le brindrá un reporte en PDF de lo realizado y de lo que esta pendiente con su servicio. Para obtener el reporte envie el siguiente mensaje: <strong>rddr</strong><br><br><strong>AGENDA:</strong><br>Le informa con fechas, los puntos que han tratado y los que se deberán ver a lo largo del proceso.<br><br><strong>MEMORIAS:</strong><br>Se proporciona un resumen las reuniones."):
-    isInArray(comovamos, lastmsg)==true?(smsg="Estimado cliente <br><br>Será un gusto informarle acerca del estado de su servicio. <br><br>Podría enviarnos un mensaje con su código de cliente, por favor."):
-    isInArray(status, lastmsg)==true?(smsg="<strong>APRECIABLE CLIENTE</strong> <br><br> Para brindarle el estado del servicio es necesario que proporcione su código de cliente, este le fue proporcionado al momento de contratarnos. <br> <br> <strong>Ingrese su código<strong>"):
-    isInArray(ayuda, lastmsg)==true?(smsg="Claro, será un gusto ayudarle.<br><br>A continuación le presento una serie de opciones que puede utilizar para comenzar a interactuar.<br><br>"):
+    isInArray(saludo, lastmsg)==true?(smsg="Hola, como puedo ayudarle"):
+
     //checking if user input including SEARCH keyword
     //search result using iframe 
     lastmsg.substring(0, 6)=="RDDR"?(lastmsg.slice(7),smsg="<iframe src='https://drive.google.com/file/d/1SHoWzMCMTH6oKJ7Fu6bewr9OJ-jop4NL/preview' width='100%' height='450px' allow='autoplay'></iframe>"):
     lastmsg.substring(0, 6)=="VIDEO"?(lastmsg.slice(7),smsg="<embed width='100%' height='300px' src='https://www.youtube.com/watch?v=AqdAtTu8Aes' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></embed>"):
-    (smsg="¡¡Lo siento!! <br><br>No poseo en mi inteligencia artificial una respuesta a su mensaje<br><br> Escriba <q><b>AYUDA </b></q> para ver las opciones que puede consultar o vuelva a redactar su mensaje. <br><br> ¡Gracias!");
+    (smsg="¡Disculpe! <br><br>No poseo en mi inteligencia artificial una respuesta a su mensaje<br><br> Escriba <q><b>AYUDA </b></q> para ver las opciones que puede consultar. <br><br> ¡Gracias!");
     //creating receiving msgs 
     para = $("<div class='message received'>"+smsg+"<span class='metadata'> <span class='time'>"+time+"</span></span></div>");
     //appending receiving msg
