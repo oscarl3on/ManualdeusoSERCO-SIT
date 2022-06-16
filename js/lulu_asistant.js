@@ -87,7 +87,7 @@ $(function() {
     //search result using iframe 
     lastmsg.substring(0, 6)=="RDDR"?(lastmsg.slice(7),smsg="<iframe src='https://drive.google.com/file/d/1SHoWzMCMTH6oKJ7Fu6bewr9OJ-jop4NL/preview' width='100%' height='450px' allow='autoplay'></iframe>"):
     lastmsg.substring(0, 6)=="VIDEO"?(lastmsg.slice(7),smsg="<embed width='100%' height='300px' src='https://www.youtube.com/watch?v=AqdAtTu8Aes' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></embed>"):
-    (smsg="¡Disculpe! <br><br>No poseo en mi inteligencia artificial una respuesta a su mensaje<br><br> Escriba <q><b>AYUDA </b></q> para ver las opciones que puede consultar. <br><br> ¡Gracias!");
+    (smsg="¡Disculpe! <br><br>Escriba <q><b>AYUDA </b></q> para ver las opciones que puede consultar. <br><br> ¡Gracias!");
     //creating receiving msgs 
     para = $("<div class='message received'>"+smsg+"<span class='metadata'> <span class='time'>"+time+"</span></span></div>");
     //appending receiving msg
