@@ -1,6 +1,3 @@
-// Creado por Oscar León Tel: +50233940537
-
-
 $(function() {
     var smsg="Hi";
     //disable form submission 
@@ -57,7 +54,7 @@ $(function() {
     $("#form")[0].reset(),
     setTimeout(function(){$(".status").html("online ")},900),setTimeout(function(){$(".status").html("typing... ")},1000),lastmsg=msg.toUpperCase().trim(),$(".conversation-container").scrollTop(scroll),send());
     });
-    $("#name").html("ECO Asistente");
+    $("#name").html("Lulu Asistente");
     //if msg is sent  bot reply 
     function send(){
     var sr=lastmsg.split(" ");

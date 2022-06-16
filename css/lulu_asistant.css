@@ -26,7 +26,7 @@ html {
   
   .user-bar {
     height: 55px;
-    background: #008069;
+    background: #1a4660;
     color: #fff;
     padding: 0 8px;
     font-size: 24px;
@@ -99,7 +99,7 @@ html {
   .conversation {
     height: calc(100% - 12px);
     position: relative;
-    background: #efe7dd url("https://blogger.googleusercontent.com/img/a/AVvXsEgFDkP3G2DjmwZF1ifOdri1gOe4agSNuEksJksbiqucMMPUENTO3AVGDVbCbt7d22wRPi80_3gqRlQJFNHyV_FMQQTE6-aZhqlTD-94oUvpTHwwcugmrCOrKkDMo0Neird1ExJ-Lt1_vOYP_IqLkrGZCcj8lFRK3LTW9bPEZmVDxSkKtdv3hz4UScec=s999") repeat; /*Agregar fondo al chat*/
+    background: #efe7dd url("#") repeat; /*Agregar fondo al chat*/
     z-index: 0;
   }
   
@@ -120,7 +120,7 @@ html {
   
   .conversation .conversation-container {
     height: calc(100% - 68px);
-    box-shadow: inset 0 10px 10px -10px #008069;
+    box-shadow: inset 0 10px 10px -10px #ffffff;
     overflow-x: hidden;
     padding: 0 16px;
     margin-bottom: 5px;
