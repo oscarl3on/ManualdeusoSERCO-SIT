@@ -240,19 +240,19 @@ display: flex;
 
   /*ASISTENTE*/
   .chat {
-    height: calc(100% - 69px);
+    height: calc(10% - 69px);
   }
   
   .chat-container {
-    height: 100%;
+    height: 20%;
   }
   
   .user-bar {
-    height: 55px;
+    height: 43px;
     background: #1a4660;
     color: #fff;
     padding: 0 8px;
-    font-size: 24px;
+    font-size: 12px;
     position: relative;
     z-index: 1;
   }
@@ -269,25 +269,7 @@ display: flex;
     position: relative;
     top: 50%;
   }
-  
-  .user-bar .actions {
-    float: right;
-    margin: 0 0 0 20px;
-  }
-  
-  .user-bar .actions.more {
-    margin: 0 12px 0 32px;
-  }
-  
-  .user-bar .actions.attachment {
-    margin: 0 0 0 30px;
-  }
-  
-  .user-bar .actions.attachment i {
-    display: block;
-    transform: rotate(-45deg);
-  }
-  
+
   .user-bar .avatar {
     margin: 0 0 0 5px;
     width: 36px;
@@ -301,7 +283,7 @@ display: flex;
   }
   
   .user-bar .name {
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 600;
     text-overflow: ellipsis;
     letter-spacing: 0.3px;
@@ -320,7 +302,7 @@ display: flex;
   }
   
   .conversation {
-    height: calc(100% - 12px);
+    height: 100%;
     position: relative;
     background: #efe7dd url("#") repeat; /*Agregar fondo al chat*/
     z-index: 0;
@@ -342,7 +324,7 @@ display: flex;
   }
   
   .conversation .conversation-container {
-    height: calc(100% - 68px);
+    height: 100%;
     box-shadow: inset 0 10px 10px -10px #ffffff;
     overflow-x: hidden;
     padding: 0 16px;
@@ -359,7 +341,7 @@ display: flex;
     color: #393939;
   clear: both;
     line-height: 18px;
-    font-size: 15px;
+    font-size: 12px;
     padding: 8px;
     position: relative;
     margin: 8px 0;
@@ -431,7 +413,7 @@ display: flex;
   }
   
   .message.received {
-    background: #fff;
+    background: #ffffff;
     border-radius: 0px 5px 5px 5px;
     float: left;
   }
@@ -447,14 +429,15 @@ display: flex;
   }
   
   .message.sent {
-    background: #e1ffc7;
+    background: #1a4660;
+    color: #f4f4fb;
     border-radius: 5px 0px 5px 5px;
     float: right;
   }
   
   .message.sent:after {
     border-width: 0px 0 10px 10px;
-    border-color: transparent transparent transparent #e1ffc7;
+    border-color: transparent transparent transparent #1a4660;
     top: 0;
     right: -10px;
   }
@@ -490,7 +473,7 @@ display: flex;
   .conversation-compose .input-msg {
     border: 0;
     flex: 1 1 auto;
-    font-size: 16px;
+    font-size: 12px;
     margin: 0;
     outline: none;
     min-width: 50px;
@@ -539,19 +522,19 @@ display: flex;
   }
   
   .conversation-compose .send .circle {
-    background: #00a884;
+    background: #1a4660;
     border-radius: 50%;
     color: #fff;
     position: relative;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
   .conversation-compose .send .circle i {
-    font-size: 24px;
+    font-size: 14px;
     margin-left: 5px;
   }
   
