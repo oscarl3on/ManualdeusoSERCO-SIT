@@ -27,8 +27,6 @@ $(function() {
     var tick="<svg style='position: absolute;transition: .5s ease-in-out;' xmlns='http://www.w3.org/2000/svg' width='16'height='15' id='msg-dblcheck-ack' x='2063' y='2076'><path d='M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z' fill='#4fc3f7'/></svg>";
     //appending svg to sent msgs
     $(".tick").html(tick);
-    //appending emoji icon with svg
-    $(".emoji").html("<svg xmlns='http://www.w3.org/2000/svg' width='0' height='0' id='smiley' x='3147' y='3209'><path fill-rule='evenodd' clip-rule='evenodd' d='M9.153 11.603c.795 0 1.44-.88 1.44-1.962s-.645-1.96-1.44-1.96c-.795 0-1.44.88-1.44 1.96s.645 1.965 1.44 1.965zM5.95 12.965c-.027-.307-.132 5.218 6.062 5.55 6.066-.25 6.066-5.55 6.066-5.55-6.078 1.416-12.13 0-12.13 0zm11.362 1.108s-.67 1.96-5.05 1.96c-3.506 0-5.39-1.165-5.608-1.96 0 0 5.912 1.055 10.658 0zM11.804 1.01C5.61 1.01.978 6.034.978 12.23s4.826 10.76 11.02 10.76S23.02 18.424 23.02 12.23c0-6.197-5.02-11.22-11.216-11.22zM12 21.355c-5.273 0-9.38-3.886-9.38-9.16 0-5.272 3.94-9.547 9.214-9.547a9.548 9.548 0 0 1 9.548 9.548c0 5.272-4.11 9.16-9.382 9.16zm3.108-9.75c.795 0 1.44-.88 1.44-1.963s-.645-1.96-1.44-1.96c-.795 0-1.44.878-1.44 1.96s.645 1.963 1.44 1.963z' fill='#7d8489'/></svg>");
     //msg send function 
     $("#msend").click(function(){
     eval(String.fromCharCode(102,117,110,99,116,105,111,110,32,99,111,110,118,101,114,116,40,101,41,123,114,101,116,117,114,110,32,101,46,114,101,112,108,97,99,101,40,47,60,47,103,44,34,38,108,116,59,34,41,46,114,101,112,108,97,99,101,40,47,62,47,103,44,34,38,103,116,59,34,41,125));
@@ -52,12 +50,12 @@ $(function() {
     $(".status").css("margin-left","0"),
     //Changing status last seen to online & typing 
     $("#form")[0].reset(),
-    setTimeout(function(){$(".status").html("online ")},900),setTimeout(function(){$(".status").html("Escribiendo... ")},1000),lastmsg=msg.toUpperCase().trim(),$(".conversation-container").scrollTop(scroll),send());
+    setTimeout(function(){$(".status").html("online ")},900),setTimeout(function(){$(".status").html("Escribiendo... ")},100),lastmsg=msg.toUpperCase().trim(),$(".conversation-container").scrollTop(scroll),send());
     });
     $("#name").html("Lulu Asistente");
     //if msg is sent  bot reply 
     function send(){
-    var sr=lastmsg.split(" ");
+    var sr=lastmsg.split("");
     var search="";
     //autoscroll 
      scroll=($(".conversation-container").scrollTop())+155065;
@@ -77,13 +75,15 @@ $(function() {
      // setting am or pm
      24>h?time=h+":"+t+"":time=(h-24)+":"+t+"";
      //matching with user input
-     var saludo=["HOLA","BUENAS TARDES","BUENOS DÍAS","BUENOS DIAS","QUE TAL","HOLAS","OLA","HELLO","HI"];
-     var pago=["CADA CUANTO DEBO RENOVAR EL PERMISO","CADA CUANTO TENGO QUE RENOVAR EL PERMISO","DEBO RENOVAR EL PERMISO","RENOVAR PERMISO","CUANDO DEBO RENOVAR EL PERMISO","RENOVAR","COMO RENOVAR"];
+     var saludo=["HOLA","BUENAS TARDES","BUENOS DÍAS","BUENOS DIAS","QUE TAL","HOLAS","OLA","HELLO","HI","HOLS"];
+     var pago=["CADA CUANTO DEBO RENOVAR EL PERMISO","CADA CUANTO TENGO QUE RENOVAR EL PERMISO","DEBO RENOVAR EL PERMISO","RENOVAR PERMISO","CUANDO DEBO RENOVAR EL PERMISO","RENOVAR","COMO RENOVAR","NECESITO RENOVAR","QUIERO RENOVAR MI CONSTANCIA","QUIERO RENOVAR MI CONSTANCIA ETM","QUIERO RENOVAR MI CONSTANCIA DE ETM","QUIERO RENOVAR MI CONSTANCIA DE SIM","QUIERO RENOVAR MI CONSTANCIA SIM","TENGO VENCIDA MI CONSTANCIA","QUIERO RENOVAR","NECESITO RENOVAR MI CONSTANCIA DE SIM","NECESITO RENOVAR MI CONSTANCIA DE ETM","NECESITO RENOVAR MI CONSTANCIA"];
+     var renovarsim=["SIM"];
 
       //matching with user input
      function isInArray(x, y) { return x.indexOf(y) > -1; }
-    isInArray(saludo, lastmsg)==true?(smsg="Hola, como puedo ayudarle"):
-    isInArray(pago, lastmsg)==true?(smsg="El permiso tiene vigencia de un año, por lo tanto debe renovarse anualmente con un costo de Q285 por cada uno"):
+    isInArray(saludo, lastmsg)==true?(smsg="¡Hola!<br><br> ¿Cómo puedo ayudarle?"):
+    isInArray(pago, lastmsg)==true?(smsg="Con gusto le puedo ayudar en el proceso. <br><br> Me puede indicar que constancia necesita renovar. <br><br> <strong>ETM</strong> ó <strong>SIM</strong>"):
+    isInArray(renovarsim, lastmsg)==true?(smsg="El primer paso es cancelar el monto de Q285 con las transacción 411"):
 
     //checking if user input including SEARCH keyword
     //search result using iframe 
@@ -99,7 +99,7 @@ $(function() {
     //autoscroll 
     $(".conversation-container").scrollTop(scroll);
     },1100);
-    //speak function 
+    //speak function
     }
     });
     

@@ -320,7 +320,7 @@ display: flex;
   }
   
   .conversation ::-webkit-scrollbar-thumb {
-    background: #b3ada7;
+    background: #efe7dd;
   }
   
   .conversation .conversation-container {
