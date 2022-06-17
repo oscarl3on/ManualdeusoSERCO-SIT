@@ -81,7 +81,7 @@ $(function() {
 
       //matching with user input
      function isInArray(x, y) { return x.indexOf(y) > -1; }
-    isInArray(saludo, lastmsg)==true?(smsg="¡Hola! Soy Lulu<br>su asistente personal<br><br> ¿Cómo puedo ayudarle?"):
+    isInArray(saludo, lastmsg)==true?(smsg="¡Hola! 🙂 <br><br> ¿Cómo puedo ayudarle?"):
     isInArray(pago, lastmsg)==true?(smsg="Con gusto le puedo ayudar en el proceso. <br><br> Me puede indicar que constancia necesita renovar. <br><br> <strong>ETM</strong> ó <strong>SIM</strong>"):
     isInArray(renovarsim, lastmsg)==true?(smsg="El primer paso es cancelar el monto de Q285 con las transacción 411"):
 
