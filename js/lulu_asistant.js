@@ -75,10 +75,9 @@ $(function() {
      // setting am or pm
      24>h?time=h+":"+t+"":time=(h-24)+":"+t+"";
      //matching with user input
-     var saludo=["HOLA","BUENAS TARDES","BUENOS DÍAS","BUENOS DIAS","QUE TAL","HOLAS","OLA","HELLO","HI","HOLS"];
+     var saludo=["HOLA","BUENAS TARDES","BUENOS DÍAS","BUENOS DIAS","QUE TAL","HOLAS","OLA","HELLO","HI","HOLS","AYUDA"];
      var pago=["CADA CUANTO DEBO RENOVAR EL PERMISO","CADA CUANTO TENGO QUE RENOVAR EL PERMISO","DEBO RENOVAR EL PERMISO","RENOVAR PERMISO","CUANDO DEBO RENOVAR EL PERMISO","RENOVAR","COMO RENOVAR","NECESITO RENOVAR","QUIERO RENOVAR MI CONSTANCIA","QUIERO RENOVAR MI CONSTANCIA ETM","QUIERO RENOVAR MI CONSTANCIA DE ETM","QUIERO RENOVAR MI CONSTANCIA DE SIM","QUIERO RENOVAR MI CONSTANCIA SIM","TENGO VENCIDA MI CONSTANCIA","QUIERO RENOVAR","NECESITO RENOVAR MI CONSTANCIA DE SIM","NECESITO RENOVAR MI CONSTANCIA DE ETM","NECESITO RENOVAR MI CONSTANCIA"];
      var renovarsim=["SIM"];
-     var tumadre=["TU MADRE"];
      var imei=["COMO PUEDO BLOQUEAR MI EMEI","COMO BLOQUEAR MI TELEFONO","REPORTAR ROBO","BLOQUEO IMEI"];
 
       //matching with user input
@@ -86,7 +85,6 @@ $(function() {
     isInArray(saludo, lastmsg)==true?(smsg="¡Hola! 🙂 <br><br> ¿Cómo puedo ayudarle?"):
     isInArray(pago, lastmsg)==true?(smsg="Con gusto le puedo ayudar en el proceso. <br><br> Me puede indicar que constancia necesita renovar. <br><br> <strong>ETM</strong> ó <strong>SIM</strong>"):
     isInArray(renovarsim, lastmsg)==true?(smsg="El primer paso es cancelar el monto de Q285 con las transacción 411"):
-    isInArray(tumadre, lastmsg)==true?(smsg="La tuya por si a caso"):
     isInArray(imei, lastmsg)==true?(smsg="Los pasos a seguir son:"):
 
     //checking if user input including SEARCH keyword
