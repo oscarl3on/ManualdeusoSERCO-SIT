@@ -19,7 +19,12 @@
             <h1 class="indice_texto"><img src="../../source/question_blue.png" alt="" class="icono" width="15%"><br>Preguntas Frecuentes</h1>
             <ul class="indice_texto">
                 <li>
-                    ¿En dónde puedo pagar el valor del registro anual?
+                    <a href="javascript:mostrar();">¿En dónde puedo pagar el valor del registro anual?</a>
+                    <p id="flotante" style="display:none;">
+                        <a href="javascript:cerrar();">
+                            Unicamente en la agencia de Banrural ubicada en el 2do. piso del Centro Comercial Los Próceres, 18 calle 1-65 zona 10, Ciudad de Guatemala. <br><br> Indicar que quieren hacer la transacción #411.
+                        </a>
+                    </p>
                 </li>
                 <br>
                 <li>
@@ -52,6 +57,17 @@
             </ul>
         </article>
     </main> 
+    <script languague="javascript">
+        function mostrar() {
+            div = document.getElementById('flotante');
+            div.style.display = '';
+        }
+
+        function cerrar() {
+            div = document.getElementById('flotante');
+            div.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
 
