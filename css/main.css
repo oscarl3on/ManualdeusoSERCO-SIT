@@ -7,7 +7,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #f4f4fb;
+    background: linear-gradient(315deg, #ffffff, #d7e1ec);
 }
 
 body {
