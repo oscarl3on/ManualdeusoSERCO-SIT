@@ -23,6 +23,10 @@ body{
     font-family: sans-serif;
 }
 
+.mayus {
+    text-transform: uppercase;
+}
+
 h1{
     text-align: center;
     font-size: 1.3rem;
