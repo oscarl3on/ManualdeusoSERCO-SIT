@@ -106,31 +106,31 @@ h1{
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: #FFFFFF;
+    background-color: #162f42;
     border-radius: 50%;
-    border: 4px solid #7fcab6;
+    border: 4px solid #ffffff;
     bottom: 14px;
 }
 
 /*ACTIVE COLORS*/
 .color_intro .icon {
-    color: #162f42;
+    color: #ffffff;
 }
 
 .color_juri .icon {
-    color: #162f42;
+    color: #ffffff;
 }
 
 .color_indi .icon {
-    color: #162f42;
+    color: #ffffff;
 }
 
 .color_faqs .icon {
-    color: #162f42;
+    color: #ffffff;
 }
 
 .color_lulu .icon {
-    color: #162f42;
+    color: #ffffff;
 }
 
 /*INACTIVE COLORS*/
